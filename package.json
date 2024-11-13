@@ -13,6 +13,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@fontsource-variable/lora": "^5.1.0",
+    "@fontsource/anton": "^5.1.0",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },
