@@ -1,4 +1,4 @@
-@use './variables.scss' as vars;
+@use './variables.scss' as *;
 
 * {
   margin: 0;
@@ -14,20 +14,20 @@
 body {
   min-height: 100dvh;
   line-height: 1.5;
-  font-family: vars.$font-text;
+  font-family: $font-text;
   text-rendering: optimizeLegibility;
-  color: vars.$primary-color;
+  color: $primary-color;
 }
 
 a {
   text-decoration: none;
-  color: vars.$primary-color;
+  color: $primary-color;
 }
 
 span,
 button,
 textarea {
-  font-family: vars.$font-text;
+  font-family: $font-text;
 }
 
 h1,
@@ -37,7 +37,7 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
-  font-family: vars.$font-title;
+  font-family: $font-title;
 }
 
 img,
