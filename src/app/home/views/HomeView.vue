@@ -1,7 +1,8 @@
 <template>
   <AppHeader></AppHeader>
   <main>
-    <IntroSection></IntroSection>
+    <HomeIntro></HomeIntro>
+    <HomeFilmRolls></HomeFilmRolls>
   </main>
 </template>
 
@@ -9,5 +10,6 @@
 import '@fontsource-variable/lora';
 import '@fontsource/anton';
 import AppHeader from '@/app/shared/AppHeader.vue';
-import IntroSection from '../sections/IntroSection.vue';
+import HomeIntro from '../sections/HomeIntro.vue';
+import HomeFilmRolls from '../sections/HomeFilmRolls.vue';
 </script>
