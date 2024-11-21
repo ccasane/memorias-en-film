@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
+import '@fontsource/calistoga';
 import '@fontsource-variable/lora';
-import '@fontsource/anton';
 import AppHeader from '@/app/shared/AppHeader.vue';
 import HomeIntro from '../sections/HomeIntro.vue';
 import HomeFilmRolls from '../sections/HomeFilmRolls.vue';
