@@ -6,7 +6,7 @@
       </div>
       <nav class="header__nav">
         <a href="/">Inicio</a>
-        <a href="/">Película</a>
+        <a href="/">Carretes</a>
         <a href="/">Acerca de</a>
       </nav>
     </div>
@@ -17,8 +17,9 @@
 
 <style lang="scss" scoped>
 .header {
-  padding: 1.2rem 1rem;
+  padding: 1rem;
   background-color: $primary-color;
+  border-bottom: 4px solid $secondary-color;
 
   &__container {
     max-width: 990px;
@@ -29,16 +30,20 @@
   }
 
   &__logo {
+    padding: 0 0.6rem;
     background-color: $neutral-color;
-    padding: 0.2rem 0.8rem;
+    transition: background-color 0.29s ease;
 
     a {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-family: $font-title;
     }
 
     &:hover {
       background-color: $accent-color;
+      text-decoration: underline;
+      text-underline-offset: 2.5px;
+      text-decoration-thickness: 1.5px;
     }
   }
 
