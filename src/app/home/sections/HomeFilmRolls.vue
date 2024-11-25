@@ -2,11 +2,16 @@
   <section class="film-rolls">
     <div class="film-rolls__container">
       <h2>Tipos de carretes fotográficos</h2>
-      <p>{{ filmRolls.description }}</p>
+      <p>{{ description }}</p>
       <div class="film-rolls__card">
-        <HomeCard></HomeCard>
-        <HomeCard></HomeCard>
-        <HomeCard></HomeCard>
+        <HomeCard
+          v-for="roll in categories"
+          :key="roll.title"
+          :image="roll.image"
+          :title="roll.title"
+          :alt="roll.alt"
+        >
+        </HomeCard>
       </div>
       <HomeButton></HomeButton>
     </div>
@@ -17,6 +22,8 @@
 import { filmRolls } from '@/app/home/data/home-data.json';
 import HomeCard from '../components/HomeCard.vue';
 import HomeButton from '../components/HomeButton.vue';
+
+const { description, categories } = filmRolls;
 </script>
 
 <style lang="scss" scoped>

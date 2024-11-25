@@ -1,19 +1,25 @@
 <template>
   <article class="card">
     <div class="card__image">
-      <img src="" alt="" />
+      <img :src="image" :alt="alt" />
     </div>
     <div class="card__description">
-      <p>{{}}</p>
+      <p>{{ title }}</p>
     </div>
   </article>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{
+  image: string;
+  title: string;
+  alt: string;
+}>();
+</script>
 
 <style lang="scss" scoped>
 .card {
-  max-width: 250px;
+  max-width: 260px;
   margin: auto;
   border: 2px solid $primary-color;
   background-color: $accent-color;
