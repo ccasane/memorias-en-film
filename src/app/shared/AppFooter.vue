@@ -22,18 +22,19 @@ const dateFooter = ref(new Date().getFullYear());
 <style lang="scss" scoped>
 .footer {
   padding: 1.8rem 1rem;
-  background-color: $accent-color;
+  background-color: $primary-color;
 
   &__container {
-    max-width: 990px;
+    max-width: 840px;
     width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    p {
-      font-size: 0.875rem;
+    p,
+    a {
+      color: $neutral-color;
     }
 
     a:hover {
@@ -48,7 +49,6 @@ const dateFooter = ref(new Date().getFullYear());
     align-items: center;
     gap: 1.5rem;
     font-weight: 600;
-    font-size: 0.875rem;
   }
 }
 </style>
