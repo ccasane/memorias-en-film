@@ -3,31 +3,47 @@
     <div class="film-rolls__container">
       <h2>Tipos de carretes fotográficos</h2>
       <p>{{ filmRolls.description }}</p>
+      <div class="film-rolls__card">
+        <HomeCard></HomeCard>
+        <HomeCard></HomeCard>
+        <HomeCard></HomeCard>
+      </div>
+      <HomeButton></HomeButton>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { filmRolls } from '../data/home-data.json';
+import { filmRolls } from '@/app/home/data/home-data.json';
+import HomeCard from '../components/HomeCard.vue';
+import HomeButton from '../components/HomeButton.vue';
 </script>
 
 <style lang="scss" scoped>
 .film-rolls {
+  padding: 0 1rem 5rem;
   background-color: $neutral-color;
 
   &__container {
-    max-width: 990px;
+    max-width: 840px;
     width: 100%;
     margin: auto;
+
     h2 {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     p {
-      max-width: 860px;
       width: 100%;
       margin: 0.8rem 0;
     }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-content: space-between;
+    gap: 2rem;
   }
 }
 </style>
