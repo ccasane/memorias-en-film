@@ -19,33 +19,29 @@ import { home } from '../data/home-data.json';
   background-color: $neutral-color;
 
   .intro__container {
-    max-width: 990px;
+    max-width: 840px;
     width: 100%;
     margin: auto;
 
     h1 {
       display: inline-block;
-      font-size: 3rem;
-      margin-bottom: 1.3rem;
-      cursor: pointer;
-      box-shadow: 0 2px $primary-color;
-      transition:
-        box-shadow 0.29s ease,
-        word-spacing 0.29s ease;
+      font-size: 3.8rem;
+      margin-bottom: 1.5rem;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      transition: word-spacing 0.29s ease;
 
       &:hover {
         word-spacing: 18px;
-        box-shadow: 0 4px $primary-color;
         animation: flashEffect 0.39s ease-in-out;
       }
     }
 
     h2 {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     p {
-      max-width: 860px;
       width: 100%;
       margin: 0.8rem 0;
     }
