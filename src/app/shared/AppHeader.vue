@@ -17,12 +17,12 @@
 
 <style lang="scss" scoped>
 .header {
-  padding: 1rem;
-  background-color: $primary-color;
-  border-bottom: 4px solid $secondary-color;
+  padding: 0.8rem 1rem;
+  background-color: $accent-color;
+  border-bottom: 4px solid $primary-color;
 
   &__container {
-    max-width: 990px;
+    max-width: 840px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -31,16 +31,17 @@
 
   &__logo {
     padding: 0 0.6rem;
-    background-color: $neutral-color;
+    background-color: $primary-color;
     transition: background-color 0.29s ease;
 
     a {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
+      color: $neutral-color;
       font-family: $font-title;
     }
 
     &:hover {
-      background-color: $accent-color;
+      color: $neutral-color;
       text-decoration: underline;
       text-underline-offset: 2.5px;
       text-decoration-thickness: 1.5px;
@@ -53,8 +54,8 @@
     gap: 2rem;
 
     a {
-      color: $neutral-color;
       font-weight: 600;
+      font-size: 1.1rem;
 
       &:hover {
         text-decoration: underline;
