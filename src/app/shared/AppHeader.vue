@@ -2,12 +2,12 @@
   <header class="header">
     <div class="header__container">
       <div class="header__logo">
-        <a href="/">MEF.</a>
+        <RouterLink to="/">MEF.</RouterLink>
       </div>
       <nav class="header__nav">
-        <a href="/">Inicio</a>
-        <a href="/">Carretes</a>
-        <a href="/">Acerca de</a>
+        <RouterLink to="/">Inicio</RouterLink>
+        <RouterLink to="film-rolls">Carretes</RouterLink>
+        <RouterLink to="about">Acerca de</RouterLink>
       </nav>
     </div>
   </header>

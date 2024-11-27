@@ -1,14 +1,11 @@
 <template>
   <footer class="footer">
     <div class="footer__container">
-      <p>
-        © {{ dateFooter }} Memorias en Film. Realizado por
-        <a href="/">Joel Ccasane</a>
-      </p>
+      <p>© {{ dateFooter }} Memorias en Film. Realizado por <a href="/">Joel Ccasane</a>.</p>
       <div class="footer__links">
-        <a href="">Inicio</a>
-        <a href="">Carretes</a>
-        <a href="">Acerca de</a>
+        <RouterLink to="/">Inicio</RouterLink>
+        <RouterLink to="film-rolls">Carretes</RouterLink>
+        <RouterLink to="about">Acerca de</RouterLink>
       </div>
     </div>
   </footer>
