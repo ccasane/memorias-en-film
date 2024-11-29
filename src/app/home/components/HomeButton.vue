@@ -1,6 +1,6 @@
 <template>
   <div class="button">
-    <a href="">Ver más</a>
+    <RouterLink to="film-rolls">Ver más</RouterLink>
   </div>
 </template>
 
