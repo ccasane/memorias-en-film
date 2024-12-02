@@ -1,0 +1,24 @@
+{
+  "about": {
+    "title": "Acerca de",
+    "questions": [
+      {
+        "title": "¿Qué es Memorias en Film?",
+        "description": "Memorias en Film es una iniciativa completamente dedicada a los carretes de película fotográfica, con el objetivo de recopilar los diferentes tipos de carretes existentes y hacer que la información sobre ellos sea accesible para todos de forma sencilla."
+      },
+      {
+        "title": "¿Cómo surgió Memorias en Film?",
+        "description": "Un día, descubrí una cámara analógica en forma de tarro de leche, lo que despertó mi curiosidad. Desde ese momento, me encanto y me aún más adentré en el mundo de la fotografía analógica, hasta que un día se me ocurrió crear este proyecto, dedicado enteramente a los rollos de película fotográfica."
+      },
+      {
+        "title": "¿Qué encontrarás en Memorias en Film?",
+        "description": "En Memorias en Film encontrarás una recopilación de diferentes tipos de carretes de película fotográfica, junto con información detallada sobre sus características y tipos. Estamos en constante cambio, por lo que en el futuro no se cierra a agregar contenido relacionado."
+      },
+      {
+        "title": "¿Para quién es Memorias en Film?",
+        "description": "¡Memorias en Film es para todos! Estamos aquí para ayudarte a descubrir y explorar los diferentes tipos de carretes de película fotográfica, proporcionando información sencilla y accesible para todos."
+      }
+    ],
+    "quote": "No necesitas ser un experto, ¡simplemente sé tú mismo! ¡Eso es bueno!"
+  }
+}
