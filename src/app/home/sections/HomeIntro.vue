@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { home } from '../data/home-data.json';
+import { home } from '@/app/home/data/home-data.json';
 </script>
 
 <style lang="scss" scoped>
@@ -26,7 +26,7 @@ import { home } from '../data/home-data.json';
     h1 {
       display: inline-block;
       font-size: 3.8rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       text-decoration: underline;
       text-underline-offset: 5px;
       transition: word-spacing 0.29s ease;
@@ -38,11 +38,10 @@ import { home } from '../data/home-data.json';
     }
 
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     p {
-      width: 100%;
       margin: 0.8rem 0;
     }
   }
