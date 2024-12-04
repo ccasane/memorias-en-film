@@ -1,7 +1,7 @@
 <template>
   <section class="film-rolls">
     <div class="film-rolls__container">
-      <h2>Tipos de carretes fotográficos</h2>
+      <h2>Tipos de carretes de película fotográfica</h2>
       <p>{{ description }}</p>
       <div class="film-rolls__card">
         <HomeCard
@@ -20,8 +20,8 @@
 
 <script setup lang="ts">
 import { filmRolls } from '@/app/home/data/home-data.json';
-import HomeCard from '../components/HomeCard.vue';
-import HomeButton from '../components/HomeButton.vue';
+import HomeCard from '@/app/home/components/HomeCard.vue';
+import HomeButton from '@/app/home/components/HomeButton.vue';
 
 const { description, categories } = filmRolls;
 </script>
@@ -37,11 +37,12 @@ const { description, categories } = filmRolls;
     margin: auto;
 
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      font-family: $font-text;
     }
 
     p {
-      width: 100%;
       margin: 0.8rem 0;
     }
   }

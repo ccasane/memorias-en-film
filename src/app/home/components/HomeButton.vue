@@ -11,17 +11,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 
   a {
-    padding: 0.3rem 1.5rem;
+    padding: 0.2rem 1.5rem;
     font-weight: 600;
     color: $neutral-color;
+    border: 2px solid transparent;
     background-color: $primary-color;
-    transition: background 0.29s ease;
 
     &:hover {
-      background-color: $secondary-color;
+      color: $primary-color;
+      background-color: $neutral-color;
+      border: 2px solid $primary-color;
+      box-shadow: 3px 4px $primary-color;
     }
   }
 }
