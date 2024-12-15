@@ -25,24 +25,25 @@ import { home } from '@/app/home/data/home-data.json';
 
     h1 {
       display: inline-block;
-      font-size: 3.8rem;
-      margin-bottom: 2rem;
+      font-size: 4rem;
+      margin-bottom: 3rem;
       text-decoration: underline;
-      text-underline-offset: 5px;
+      text-underline-offset: 12px;
       transition: word-spacing 0.29s ease;
 
       &:hover {
-        word-spacing: 18px;
         animation: flashEffect 0.39s ease-in-out;
       }
     }
 
     h2 {
       font-size: 1.1rem;
+      font-family: $font-text;
+      font-weight: 700;
     }
 
     p {
-      margin: 0.8rem 0;
+      margin: 0.9rem 0;
     }
   }
 }
