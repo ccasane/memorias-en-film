@@ -1,11 +1,7 @@
 <template>
   <article class="card">
-    <div class="card__image">
-      <img :src="image" :alt="alt" />
-    </div>
-    <div class="card__description">
-      <p>{{ title }}</p>
-    </div>
+    <img :src="image" :alt="alt" />
+    <p>{{ title }}</p>
   </article>
 </template>
 
@@ -21,18 +17,15 @@ defineProps<{
 .card {
   max-width: 260px;
   margin: auto;
-  border: 2px solid $neutral-color;
+  border: 2px solid;
   background-color: rgba($accent-color, 0.6);
 
-  &__description {
+  p {
     padding: 0.6rem 1rem;
     background-color: $primary-color;
     color: $neutral-color;
-
-    p {
-      text-align: center;
-      font-weight: 600;
-    }
+    text-align: center;
+    font-weight: 600;
   }
 
   &:hover {
@@ -40,7 +33,7 @@ defineProps<{
     box-shadow: 5px 6px $primary-color;
     border: 2px solid $primary-color;
 
-    .card__description {
+    p {
       background-color: $accent-color;
       color: $primary-color;
     }

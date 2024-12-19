@@ -43,7 +43,7 @@ const { description, categories } = filmRolls;
     }
 
     p {
-      margin: 0.8rem 0;
+      margin: 0.9rem 0;
     }
   }
 
@@ -52,6 +52,7 @@ const { description, categories } = filmRolls;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     justify-content: space-between;
     gap: 2rem;
+    margin-top: 1.2rem;
   }
 }
 </style>

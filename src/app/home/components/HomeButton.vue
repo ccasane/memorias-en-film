@@ -11,10 +11,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
 
   a {
-    padding: 0.2rem 1.5rem;
+    padding: 0.3rem 1.5rem;
     font-weight: 600;
     color: $neutral-color;
     border: 2px solid transparent;
