@@ -26,14 +26,14 @@ const { questions } = about;
     margin: auto;
 
     h1 {
-      font-size: 3.8rem;
+      font-size: 4rem;
       margin-bottom: 2.5rem;
       text-decoration: underline;
       text-underline-offset: 5px;
     }
 
     div {
-      background-color: rgba($accent-color, 0.6);
+      background-color: rgba($accent-color, 0.4);
       padding: 1rem;
       margin-bottom: 1.3rem;
       border: 2px solid transparent;
@@ -47,10 +47,12 @@ const { questions } = about;
 
     h2 {
       font-size: 1.1rem;
+      font-family: $font-text;
+      font-weight: 700;
     }
 
     p {
-      margin: 0.8rem 0 0;
+      margin: 1rem 0 0;
     }
   }
 }
