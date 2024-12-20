@@ -18,7 +18,7 @@ const dateFooter = ref(new Date().getFullYear());
 
 <style lang="scss" scoped>
 .footer {
-  padding: 1.8rem 1rem;
+  padding: 2.5rem 1rem;
   background-color: $primary-color;
 
   &__container {
@@ -46,6 +46,25 @@ const dateFooter = ref(new Date().getFullYear());
     align-items: center;
     gap: 1.5rem;
     font-weight: 600;
+    margin-top: 0.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    &__container,
+    &__links {
+      align-items: start;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    &__links {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
   }
 }
 </style>
