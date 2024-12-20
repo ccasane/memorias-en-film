@@ -1,0 +1,41 @@
+{
+  "filmRolls": {
+    "title": "Carretes",
+    "description": [
+      "Aquí podrás explorar una amplia variedad de carretes de película fotográfica, organizados según sus especificaciones técnicas, como ISO, color, exposiciones, marca y formato. Este apartado te permitirá conocer las características de cada tipo de rollo y cómo se relacionan con tus necesidades fotográficas.",
+      "Siéntete libre de explorar todos los tipos de carretes de película fotográfica."
+    ],
+    "categories": [
+      {
+        "image": "/src/assets/2.webp",
+        "title": "Por película",
+        "alt": "Imagen referencial de color"
+      },
+      {
+        "image": "/src/assets/1.webp",
+        "title": "Por ISO",
+        "alt": "Imagen referencial de ISO"
+      },
+      {
+        "image": "/src/assets/3.webp",
+        "title": "Por formato",
+        "alt": "Imagen referencial de formato"
+      },
+      {
+        "image": "/src/assets/3.webp",
+        "title": "Por exposiciones",
+        "alt": "Imagen referencial de exposiciones"
+      },
+      {
+        "image": "/src/assets/3.webp",
+        "title": "Por marca",
+        "alt": "Imagen referencial de marca"
+      },
+      {
+        "image": "/src/assets/3.webp",
+        "title": "Otros",
+        "alt": "Imagen referencial de exposiciones"
+      }
+    ]
+  }
+}
