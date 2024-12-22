@@ -17,8 +17,9 @@ defineProps<{
 .card {
   max-width: 260px;
   margin: auto;
-  border: 2px solid;
-  background-color: rgba($accent-color, 0.6);
+  border: 2px solid $neutral-color;
+  background-color: rgba($accent-color, 0.5);
+  opacity: 0.85;
 
   p {
     padding: 0.6rem 1rem;
@@ -32,6 +33,7 @@ defineProps<{
     background-color: $neutral-color;
     box-shadow: 5px 6px $primary-color;
     border: 2px solid $primary-color;
+    opacity: 1;
 
     p {
       background-color: $accent-color;

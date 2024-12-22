@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import { filmRolls } from '@/app/home/data/home-data.json';
-import HomeCard from '@/app/home/components/HomeCard.vue';
+import HomeCard from '@/app/shared/AppCard.vue';
 import HomeButton from '@/app/home/components/HomeButton.vue';
 
 const { description, categories } = filmRolls;
