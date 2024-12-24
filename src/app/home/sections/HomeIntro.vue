@@ -18,7 +18,7 @@ import { home } from '@/app/home/data/home-data.json';
   padding: 5rem 1rem 0;
   background-color: $neutral-color;
 
-  .intro__container {
+  &__container {
     max-width: 840px;
     width: 100%;
     margin: auto;
@@ -26,7 +26,7 @@ import { home } from '@/app/home/data/home-data.json';
     h1 {
       display: inline-block;
       font-size: 4rem;
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
       text-decoration: underline;
       text-underline-offset: 12px;
       transition: word-spacing 0.29s ease;
@@ -43,7 +43,7 @@ import { home } from '@/app/home/data/home-data.json';
     }
 
     p {
-      margin: 0.9rem 0;
+      margin: 1rem 0;
     }
   }
 }
