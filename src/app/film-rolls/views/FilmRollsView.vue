@@ -1,7 +1,56 @@
 <template>
-  <div></div>
+  <section class="film-rolls">
+    <div class="film-rolls__container">
+      <h1>{{ filmRolls.title }}</h1>
+      <p>{{ filmRolls.description[0] }}</p>
+      <p>{{ filmRolls.description[1] }}</p>
+      <div class="film-rolls__card">
+        <HomeCard
+          v-for="roll in categories"
+          :key="roll.title"
+          :image="roll.image"
+          :title="roll.title"
+          :alt="roll.alt"
+        ></HomeCard>
+      </div>
+    </div>
+  </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { filmRolls } from '@/app/film-rolls/data/rolls-data.json';
+import HomeCard from '@/app/shared/AppCard.vue';
 
-<style scoped></style>
+const { categories } = filmRolls;
+</script>
+
+<style lang="scss" scoped>
+.film-rolls {
+  padding: 5rem 1rem;
+
+  &__container {
+    max-width: 840px;
+    width: 100%;
+    margin: auto;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 2.5rem;
+      text-decoration: underline;
+      text-underline-offset: 12px;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+}
+</style>
