@@ -1,8 +1,8 @@
 <template>
-  <article class="card">
+  <a href="" class="card">
     <img :src="image" :alt="alt" />
     <p>{{ title }}</p>
-  </article>
+  </a>
 </template>
 
 <script setup lang="ts">
@@ -18,7 +18,7 @@ defineProps<{
   max-width: 260px;
   margin: auto;
   border: 2px solid $neutral-color;
-  background-color: rgba($accent-color, 0.5);
+  background-color: rgba($accent-color, 0.4);
   opacity: 0.85;
 
   p {
