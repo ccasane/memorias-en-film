@@ -1,7 +1,10 @@
 <template>
   <footer class="footer">
     <div class="footer__container">
-      <p>© {{ dateFooter }} Memorias en Film. Realizado por <a href="/">Joel Ccasane</a>.</p>
+      <p>
+        © {{ dateFooter }} Memorias en Film. Realizado por
+        <a href="https://github.com/ccasane">Joel Ccasane</a>.
+      </p>
       <div class="footer__links">
         <RouterLink to="/">Inicio</RouterLink>
         <RouterLink to="film-rolls">Carretes</RouterLink>
@@ -18,7 +21,7 @@ const dateFooter = ref(new Date().getFullYear());
 
 <style lang="scss" scoped>
 .footer {
-  padding: 2.5rem 1rem;
+  padding: 2rem 1rem;
   background-color: $primary-color;
 
   &__container {
