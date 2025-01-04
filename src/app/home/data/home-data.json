@@ -10,17 +10,17 @@
     "description": "Descubre los diferentes tipos de carretes de película fotográfica, desde los clásicos en blanco y negro hasta los más experimentales.",
     "categories": [
       {
-        "image": "/src/assets/2.webp",
+        "image": "/images/2.webp",
         "title": "Por película",
         "alt": "Imagen referencial de color"
       },
       {
-        "image": "/src/assets/1.webp",
+        "image": "/images/1.webp",
         "title": "Por ISO",
         "alt": "Imagen referencial de ISO"
       },
       {
-        "image": "/src/assets/3.webp",
+        "image": "/images/3.webp",
         "title": "Por formato",
         "alt": "Imagen referencial de formato"
       }
