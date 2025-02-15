@@ -1,12 +1,12 @@
 <template>
   <div class="about">
+    <h1>{{ about.title }}</h1>
     <div class="about__container">
-      <h1>{{ about.title }}</h1>
-      <div v-for="(quest, index) in questions" :key="quest.title">
+      <section v-for="(quest, index) in questions" :key="quest.title">
         <h2>{{ quest.title }}</h2>
         <p>{{ quest.description }}</p>
-        <strong v-if="index === questions.length - 1">{{ about.phrase }}</strong>
-      </div>
+        <strong v-if="index === questions.length - 3">{{ about.phrase }}</strong>
+      </section>
     </div>
   </div>
 </template>
@@ -20,39 +20,54 @@ const { questions } = about;
 .about {
   padding: 5rem 1rem;
 
-  &__container {
-    max-width: 840px;
+  h1 {
+    max-width: 920px;
     width: 100%;
     margin: auto;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+  }
 
-    h1 {
-      font-size: 4rem;
-      margin-bottom: 2.5rem;
-      text-decoration: underline;
-      text-underline-offset: 5px;
-    }
+  &__container {
+    max-width: 920px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
 
-    div {
+    section {
       background-color: rgba($accent-color, 0.4);
       padding: 1rem;
-      margin-bottom: 1.3rem;
-      border: 2px solid transparent;
+      border: 3px solid transparent;
+      border-radius: 12px;
+      transition: all 0.18s ease;
 
       &:hover {
         box-shadow: 5px 6px $primary-color;
-        border: 2px solid $primary-color;
+        border: 3px solid $primary-color;
         background-color: $neutral-color;
       }
-    }
 
-    h2 {
-      font-size: 1.1rem;
-      font-family: $font-text;
-      font-weight: 700;
-    }
+      h2 {
+        font-size: 1.1rem;
+        font-family: $font-text;
+        font-weight: 700;
+      }
 
-    p {
-      margin: 1rem 0 0;
+      p {
+        margin: 0.6rem 0 0;
+      }
+
+      strong {
+        font-size: 0.875rem;
+      }
+
+      &:nth-child(4):hover {
+        strong {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
