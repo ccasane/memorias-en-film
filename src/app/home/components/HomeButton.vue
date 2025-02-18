@@ -16,15 +16,20 @@
   a {
     padding: 0.3rem 1.5rem;
     font-weight: 600;
+    border-radius: 8px;
+    border: 3px solid transparent;
     color: $neutral-color;
-    border: 2px solid transparent;
     background-color: $primary-color;
+    transition: all 0.18s ease;
 
     &:hover {
+      border: 3px solid $primary-color;
       color: $primary-color;
       background-color: $neutral-color;
-      border: 2px solid $primary-color;
-      box-shadow: 3px 4px $primary-color;
+      box-shadow: 2px 3px $primary-color;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 1.5px;
     }
   }
 }

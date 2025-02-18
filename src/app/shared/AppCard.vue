@@ -15,29 +15,31 @@ defineProps<{
 
 <style lang="scss" scoped>
 .card {
-  max-width: 260px;
+  max-width: 290px;
   margin: auto;
-  border: 2px solid $neutral-color;
+  border: 3px solid $neutral-color;
+  border-radius: 12px;
   background-color: rgba($accent-color, 0.4);
-  opacity: 0.85;
+  transition: all 0.18s ease;
 
   p {
     padding: 0.6rem 1rem;
-    background-color: $primary-color;
+    border-radius: 0 0 12px 12px;
     color: $neutral-color;
+    background-color: $primary-color;
     text-align: center;
-    font-weight: 600;
+    transition: all 0.18s ease;
   }
 
   &:hover {
+    border: 3px solid $primary-color;
     background-color: $neutral-color;
     box-shadow: 5px 6px $primary-color;
-    border: 2px solid $primary-color;
-    opacity: 1;
 
     p {
-      background-color: $accent-color;
+      font-weight: 700;
       color: $primary-color;
+      background-color: $accent-color;
     }
   }
 }

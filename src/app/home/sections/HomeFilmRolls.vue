@@ -28,11 +28,11 @@ const { description, categories } = filmRolls;
 
 <style lang="scss" scoped>
 .film-rolls {
-  padding: 0 1rem 5rem;
+  padding: 1rem 1rem 5rem;
   background-color: $neutral-color;
 
   &__container {
-    max-width: 840px;
+    max-width: 920px;
     width: 100%;
     margin: auto;
 
@@ -43,16 +43,16 @@ const { description, categories } = filmRolls;
     }
 
     p {
-      margin: 0.9rem 0;
+      margin: 0.6rem 0;
     }
   }
 
   &__card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     justify-content: space-between;
     gap: 2rem;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
   }
 }
 </style>
