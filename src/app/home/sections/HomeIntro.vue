@@ -19,7 +19,7 @@ import { home } from '@/app/home/data/home-data.json';
   background-color: $neutral-color;
 
   &__container {
-    max-width: 840px;
+    max-width: 920px;
     width: 100%;
     margin: auto;
 
@@ -27,13 +27,6 @@ import { home } from '@/app/home/data/home-data.json';
       display: inline-block;
       font-size: 4rem;
       margin-bottom: 2.5rem;
-      text-decoration: underline;
-      text-underline-offset: 12px;
-      transition: word-spacing 0.29s ease;
-
-      &:hover {
-        animation: flashEffect 0.39s ease-in-out;
-      }
     }
 
     h2 {
@@ -43,23 +36,8 @@ import { home } from '@/app/home/data/home-data.json';
     }
 
     p {
-      margin: 1rem 0;
+      margin: 0.6rem 0;
     }
-  }
-}
-
-@keyframes flashEffect {
-  0% {
-    color: $primary-color;
-    opacity: 1;
-  }
-  50% {
-    color: #fff;
-    opacity: 0.5;
-  }
-  100% {
-    color: $primary-color;
-    opacity: 1;
   }
 }
 </style>
