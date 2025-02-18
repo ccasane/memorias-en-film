@@ -33,8 +33,8 @@ const { questions } = about;
     width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 2em;
 
     section {
       background-color: rgba($accent-color, 0.4);
