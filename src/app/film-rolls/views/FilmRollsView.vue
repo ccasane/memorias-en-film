@@ -29,25 +29,24 @@ const { categories } = filmRolls;
   padding: 5rem 1rem;
 
   &__container {
-    max-width: 840px;
+    max-width: 920px;
     width: 100%;
     margin: auto;
 
     h1 {
       font-size: 4rem;
       margin-bottom: 2.5rem;
-      text-decoration: underline;
       text-underline-offset: 12px;
     }
 
     p {
-      margin: 1rem 0;
+      margin: 0.6rem 0;
     }
   }
 
   &__card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     justify-content: space-between;
     gap: 2rem;
     margin-top: 1.5rem;
