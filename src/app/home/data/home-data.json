@@ -2,12 +2,12 @@
   "home": {
     "title": "Memorias en Film.",
     "description": [
-      "Los carretes de película fotográfica son un medio de almacenamiento que registra imágenes a través de una capa sensible a la luz. Cada fotograma conserva un momento específico de forma latente, hasta que se somete al proceso de revelado.",
-      "Una vez procesada, la imagen se convierte en un registro tangible, destacando los detalles con una fidelidad que refleja la realidad de manera precisa. Este proceso, que combina precisión técnica y arte visual, ofrece una calidad única, capturando la esencia del momento de forma auténtica."
+      "Los carretes fotográficos son un medio que captura imágenes mediante una capa sensible a la luz. Cada fotograma conserva un momento de forma latente hasta que se somete al proceso de revelado, convirtiéndose en un registro tangible que refleja los detalles con gran fidelidad.",
+      "Una vez procesada, la imagen refleja la realidad con precisión, combinando técnica y arte visual para ofrecer una calidad única. Así, se captura la esencia del momento de manera auténtica y fiel."
     ]
   },
   "filmRolls": {
-    "description": "Descubre los diferentes tipos de carretes de película fotográfica, desde los clásicos en blanco y negro hasta los más experimentales.",
+    "description": "Descubre los diferentes tipos de carretes fotográficos, desde los clásicos en blanco y negro hasta los más experimentales.",
     "categories": [
       {
         "image": "/images/2.webp",
